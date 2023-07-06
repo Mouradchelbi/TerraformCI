@@ -9,17 +9,16 @@ terraform {
 
  
   }
+
 terraform {
   cloud {
-    organization = "vincentOrg"
+    organization = "spotranking"
 
     workspaces {
       name = "TerraformCI"
     }
   }
 }
-
-
 provider "azurerm" {
   features {}
   skip_provider_registration = true
